@@ -1,0 +1,23 @@
+{
+  "channels": {
+    "telegram": {
+      "botToken": "<BOT_TOKEN>"
+    }
+  },
+  "providers": {
+    "openai": {
+      "apiKey": "<API_KEY>",
+      "baseUrl": "https://cloud-api.near.ai/v1"
+    }
+  },
+  "agents": [
+    {
+      "id": "bob",
+      "role": "orchestrator",
+      "defaultProvider": "openai",
+      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "enabledProviders": ["openai"],
+      "skillsEnabled": ["files", "git", "git-remote"]
+    }
+  ]
+}

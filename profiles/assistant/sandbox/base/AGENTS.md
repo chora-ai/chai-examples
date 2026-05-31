@@ -1,8 +1,6 @@
-# Context
+# Agents
 
-## Owner
-
-Alice is the owner of this knowledge base.
+This is the `AGENTS.md` file in the root of the `base` directory.
 
 ## Purpose
 
@@ -17,7 +15,7 @@ A personal knowledge base for organizing projects, capturing ideas, conducting r
 ├── 00-meta/         # Conventions, workflows, templates
 ├── 01-projects/     # Project notes
 ├── 02-research/     # Research notes
-├── AGENTS.md        # This file
+└── AGENTS.md        # This file
 ```
 
 ## Format

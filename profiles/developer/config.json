@@ -4,19 +4,21 @@
       "botToken": "<BOT_TOKEN>"
     }
   },
-  "providers": {
-    "openai": {
-      "apiKey": "<API_KEY>",
-      "baseUrl": "https://cloud-api.near.ai/v1"
+  "providers": [
+    {
+      "id": "nearai",
+      "endpoint": "openai-compat",
+      "baseUrl": "https://cloud-api.near.ai/v1",
+      "apiKey": "<API_KEY>"
     }
-  },
+  ],
   "agents": [
     {
-      "id": "bob",
+      "id": "orchestrator",
       "role": "orchestrator",
-      "defaultProvider": "openai",
+      "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledProviders": ["openai"],
+      "enabledProviders": ["nearai"],
       "skillsEnabled": ["files", "git", "git-remote"]
     }
   ]

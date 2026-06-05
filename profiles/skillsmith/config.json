@@ -1,9 +1,4 @@
 {
-  "channels": {
-    "telegram": {
-      "botToken": "<BOT_TOKEN>"
-    }
-  },
   "providers": [
     {
       "id": "nearai",
@@ -19,7 +14,7 @@
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledProviders": ["nearai"],
-      "skillsEnabled": ["kb", "kb-frontmatter", "kb-wikilink", "rss"]
+      "skillsEnabled": ["files", "skills"]
     }
   ]
 }

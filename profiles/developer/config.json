@@ -1,7 +1,7 @@
 {
   "channels": {
     "telegram": {
-      "botToken": "<BOT_TOKEN>"
+      "botToken": "<TELEGRAM_BOT_TOKEN>"
     }
   },
   "providers": [
@@ -9,17 +9,17 @@
       "id": "nearai",
       "endpoint": "openai-compat",
       "baseUrl": "https://cloud-api.near.ai/v1",
-      "apiKey": "<API_KEY>"
+      "apiKey": "<NEAR_API_KEY>"
     }
   ],
   "agents": [
     {
-      "id": "orchestrator",
+      "id": "developer",
       "role": "orchestrator",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledProviders": ["nearai"],
-      "skillsEnabled": ["files", "git", "git-remote"]
+      "skillsEnabled": ["files", "git-read"]
     }
   ]
 }

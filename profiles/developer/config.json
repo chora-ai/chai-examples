@@ -19,7 +19,15 @@
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledProviders": ["nearai"],
-      "skillsEnabled": ["files", "git-read"]
+      "skillsEnabled": ["files", "git"]
+    },
+    {
+      "id": "worker-1",
+      "role": "worker",
+      "defaultProvider": "nearai",
+      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "enabledProviders": ["nearai"],
+      "skillsEnabled": ["files-read"]
     }
   ]
 }

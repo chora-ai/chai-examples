@@ -8,7 +8,9 @@ Example profile configurations demonstrating agent setup patterns.
 
 | Profile | Description |
 |---|---|
-| `assistant` | Personal assistant with knowledge base, web search, and daily notes |
+| `assistant` | Example profile for knowledge base work |
+| `developer` | Example profile for software development |
+| `skillsmith` | Example profile for building chai skills |
 
 ### Installation
 
@@ -25,9 +27,7 @@ Example skill packages that demonstrate CLI-backed skill design, compound subcom
 | Skill | Tools | Tier | Depends On |
 |---|---|---|---|
 | `notesmd` | 7 | moderate | `notesmd-cli` |
-| `notesmd-daily` | 2 | minimal | `notesmd-cli`, `.obsidian/daily-notes.json` |
-| `obsidian` | 0 | — | Obsidian CLI (not available) |
-| `obsidian-daily` | 0 | — | Obsidian CLI (not available) |
+| `notesmd-daily` | 2 | minimal | `notesmd-cli` |
 | `websearch` | 2 | full | SearXNG instance |
 
 ### Installation
@@ -40,12 +40,11 @@ cp -r skills/websearch ~/.chai/skills/
 
 Then enable the skill in your profile's `skillsEnabled` list.
 
-### Bundled Replacements
+### Bundled Variants
 
-The bundled `kb-*` skill family provides equivalent functionality with sandbox enforcement and no external binary dependencies:
+The bundled `kb-*` skill family provides equivalent functionality with sandbox enforcement:
 
 | Example Skill | Bundled Replacement |
 |---|---|
-| `notesmd` | `kb`, `kb-frontmatter` |
+| `notesmd` | `kb`, `kb-frontmatter`, `kb-wikilink` |
 | `notesmd-daily` | `kb-daily` |
-| `obsidian` / `obsidian-daily` | `kb`, `kb-daily` |

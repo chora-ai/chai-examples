@@ -42,9 +42,9 @@ Then enable the skill in your profile's `skillsEnabled` list.
 
 ### Bundled Variants
 
-The bundled `kb-*` skill family provides equivalent functionality with sandbox enforcement:
+The bundled `notes-*` skill family provides equivalent functionality with sandbox enforcement:
 
 | Example Skill | Bundled Replacement |
 |---|---|
-| `notesmd` | `kb`, `kb-frontmatter`, `kb-wikilink` |
-| `notesmd-daily` | `kb-daily` |
+| `notesmd` | `notes`, `notes-frontmatter`, `notes-wikilink` |
+| `notesmd-daily` | `notes-daily` |

@@ -19,7 +19,7 @@
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledProviders": ["nearai"],
-      "skillsEnabled": ["kb", "git"]
+      "skillsEnabled": ["notes", "git"]
     },
     {
       "id": "worker-1",
@@ -27,7 +27,15 @@
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledProviders": ["nearai"],
-      "skillsEnabled": ["kb-read"]
+      "skillsEnabled": ["notes-read"]
+    },
+    {
+      "id": "worker-2",
+      "role": "worker",
+      "defaultProvider": "nearai",
+      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "enabledProviders": ["nearai"],
+      "skillsEnabled": ["rss"]
     }
   ]
 }

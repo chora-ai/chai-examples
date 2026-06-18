@@ -38,7 +38,7 @@ Copy a skill directory to `~/.chai/skills/`:
 cp -r skills/websearch ~/.chai/skills/
 ```
 
-Then enable the skill in your profile's `skillsEnabled` list.
+Then enable the skill in your profile's `enabledSkills` list.
 
 ### Bundled Variants
 

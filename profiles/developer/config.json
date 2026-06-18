@@ -7,7 +7,7 @@
   "providers": [
     {
       "id": "nearai",
-      "endpoint": "openai-compat",
+      "endpointType": "openai-compat",
       "baseUrl": "https://cloud-api.near.ai/v1",
       "apiKey": "<NEAR_API_KEY>"
     }
@@ -18,24 +18,21 @@
       "role": "orchestrator",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledProviders": ["nearai"],
-      "skillsEnabled": ["files", "git"]
+      "enabledSkills": ["files", "git"]
     },
     {
       "id": "worker-1",
       "role": "worker",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledProviders": ["nearai"],
-      "skillsEnabled": ["files-read"]
+      "enabledSkills": ["files-read"]
     },
     {
       "id": "worker-2",
       "role": "worker",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledProviders": ["nearai"],
-      "skillsEnabled": ["git-read"]
+      "enabledSkills": ["git-read"]
     }
   ]
 }

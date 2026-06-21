@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "skills": {
+    "files": {
+      "hash": "1b845c29c340"
+    },
+    "files-read": {
+      "hash": "07337b166fb7"
+    },
+    "git": {
+      "hash": "65dbb09d819c"
+    },
+    "git-read": {
+      "hash": "a57d607fbb2d"
+    },
+    "git-remote": {
+      "hash": "3499ed4eef5c"
+    },
+    "logs": {
+      "hash": "695af1ab5114"
+    },
+    "notes": {
+      "hash": "cff04f6ac1b9"
+    },
+    "notes-daily": {
+      "hash": "1d2de73d177e"
+    },
+    "notes-frontmatter": {
+      "hash": "38314f10d55b"
+    },
+    "notes-read": {
+      "hash": "2d4552db91fa"
+    },
+    "notes-wikilink": {
+      "hash": "4c52288b3b98"
+    },
+    "rss": {
+      "hash": "71690d9f9cde"
+    },
+    "skills": {
+      "hash": "742e20dcc700"
+    },
+    "skills-design": {
+      "hash": "2b0cf2190b56"
+    },
+    "skills-read": {
+      "hash": "2d58cd3645d5"
+    }
+  },
+  "generation": 1
+}

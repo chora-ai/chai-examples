@@ -17,7 +17,7 @@
     },
     {
       "id": "worker-1",
-      "role": "orchestrator",
+      "role": "worker",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledSkills": ["skills-read", "skills-design"]

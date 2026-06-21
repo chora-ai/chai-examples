@@ -2,6 +2,14 @@
 
 Example profiles and skills for [chai](https://github.com/chora-ai/chai).
 
+## Versions
+
+This repository is versioned alongside chai using the same tag numbers. Each tagged release corresponds to a specific chai version — use examples from the tag that matches your chai installation. Examples on `main` may reference features or schema changes not yet released.
+
+| Tag | Chai Version |
+|-----|--------------|
+| `v0.1.0` | v0.1.0 |
+
 ## Profiles
 
 Example profile configurations demonstrating agent setup patterns.

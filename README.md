@@ -9,6 +9,7 @@ This repository is versioned alongside chai using the same tag numbers. Each tag
 | Tag | Chai Version |
 |-----|--------------|
 | `v0.1.0` | v0.1.0 |
+| `v0.2.0` | v0.2.0 |
 
 ## Profiles
 

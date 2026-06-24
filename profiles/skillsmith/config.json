@@ -22,5 +22,8 @@
       "defaultModel": "zai-org/GLM-5.1-FP8",
       "enabledSkills": ["skills-read", "skills-design"]
     }
-  ]
+  ],
+  "skills": {
+    "lockMode": "warn"
+  }
 }

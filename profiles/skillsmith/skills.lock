@@ -1,38 +1,41 @@
 {
   "version": 1,
   "skills": {
+    "cargo": {
+      "hash": "67ded1f0b6fe"
+    },
     "files": {
-      "hash": "1b845c29c340"
+      "hash": "dda86884979b"
     },
     "files-read": {
-      "hash": "07337b166fb7"
+      "hash": "18e4390a801b"
     },
     "git": {
-      "hash": "65dbb09d819c"
+      "hash": "7101b6e0bcb1"
     },
     "git-read": {
-      "hash": "a57d607fbb2d"
+      "hash": "445299aca559"
     },
     "git-remote": {
-      "hash": "3499ed4eef5c"
+      "hash": "2707eb1df3f4"
     },
     "logs": {
       "hash": "695af1ab5114"
     },
     "notes": {
-      "hash": "cff04f6ac1b9"
+      "hash": "212de6b21ba6"
     },
     "notes-daily": {
-      "hash": "1d2de73d177e"
+      "hash": "56ae3c63ff74"
     },
     "notes-frontmatter": {
       "hash": "38314f10d55b"
     },
     "notes-read": {
-      "hash": "2d4552db91fa"
+      "hash": "5c1da0ff9981"
     },
     "notes-wikilink": {
-      "hash": "4c52288b3b98"
+      "hash": "56d506fe2895"
     },
     "rss": {
       "hash": "71690d9f9cde"

@@ -18,7 +18,7 @@
       "role": "orchestrator",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledSkills": ["files", "git"]
+      "enabledSkills": ["files", "cargo", "git"]
     },
     {
       "id": "worker-1",

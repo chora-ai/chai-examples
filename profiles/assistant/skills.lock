@@ -2,52 +2,52 @@
   "version": 1,
   "skills": {
     "cargo": {
-      "hash": "67ded1f0b6fe"
+      "hash": "1d3a8539d4d6"
     },
     "files": {
-      "hash": "dda86884979b"
+      "hash": "86de91261782"
     },
     "files-read": {
-      "hash": "18e4390a801b"
+      "hash": "46e9c54e0931"
     },
     "git": {
-      "hash": "7101b6e0bcb1"
+      "hash": "bcece950e6b2"
     },
     "git-read": {
-      "hash": "445299aca559"
+      "hash": "2c0a1bc35bdc"
     },
     "git-remote": {
-      "hash": "2707eb1df3f4"
+      "hash": "a080f522e5a7"
     },
     "logs": {
-      "hash": "695af1ab5114"
+      "hash": "a9147c5d6d64"
     },
     "notes": {
-      "hash": "212de6b21ba6"
+      "hash": "30b68b828cda"
     },
     "notes-daily": {
-      "hash": "56ae3c63ff74"
+      "hash": "6ca9d4ac9955"
     },
     "notes-frontmatter": {
-      "hash": "38314f10d55b"
+      "hash": "f3b88e70b179"
     },
     "notes-read": {
-      "hash": "5c1da0ff9981"
+      "hash": "f795ff37054e"
     },
     "notes-wikilink": {
-      "hash": "56d506fe2895"
+      "hash": "3ca10a34c4ed"
     },
     "rss": {
-      "hash": "71690d9f9cde"
+      "hash": "53ce1fd8d5c5"
     },
     "skills": {
-      "hash": "742e20dcc700"
+      "hash": "560d37e7dd61"
     },
     "skills-design": {
-      "hash": "2b0cf2190b56"
+      "hash": "bcffffca671c"
     },
     "skills-read": {
-      "hash": "2d58cd3645d5"
+      "hash": "1596a162d344"
     }
   },
   "generation": 1

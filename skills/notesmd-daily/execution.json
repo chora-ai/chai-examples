@@ -1,0 +1,42 @@
+[
+  {
+    "tool": "notesmd_daily_read",
+    "binary": "notesmd-cli",
+    "subcommand": "print",
+    "args": [
+      {
+        "param": "date",
+        "kind": "positional",
+        "resolveCommand": {
+          "script": "resolve-daily-path",
+          "args": ["$param"]
+        }
+      }
+    ]
+  },
+  {
+    "tool": "notesmd_daily_update",
+    "binary": "notesmd-cli",
+    "subcommand": "create",
+    "args": [
+      {
+        "param": "date",
+        "kind": "positional",
+        "resolveCommand": {
+          "script": "resolve-daily-path",
+          "args": ["$param"]
+        }
+      },
+      {
+        "param": "content",
+        "kind": "stdin"
+      },
+      {
+        "param": "replace",
+        "kind": "flagifboolean",
+        "flagIfTrue": "--overwrite",
+        "flagIfFalse": "--append"
+      }
+    ]
+  }
+]

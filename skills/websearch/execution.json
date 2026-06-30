@@ -1,0 +1,31 @@
+[
+  {
+    "tool": "websearch_search",
+    "binary": "curl",
+    "subcommand": "-sf --max-time 10",
+    "args": [
+      {
+        "param": "query",
+        "kind": "positional",
+        "resolveCommand": {
+          "script": "build-search-url",
+          "args": ["$param"]
+        }
+      }
+    ],
+    "postProcess": {
+      "script": "format-search-results"
+    },
+    "maxOutputLines": 200
+  },
+  {
+    "tool": "websearch_fetch",
+    "binary": "curl",
+    "subcommand": "-sf --max-time 15",
+    "args": [{ "param": "url", "kind": "positional" }],
+    "postProcess": {
+      "script": "strip-html"
+    },
+    "maxOutputLines": 500
+  }
+]

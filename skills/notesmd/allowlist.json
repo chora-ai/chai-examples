@@ -1,0 +1,11 @@
+{
+  "notesmd-cli": [
+    "search-content",
+    "print",
+    "create",
+    "list",
+    "delete",
+    "frontmatter --print",
+    "frontmatter --edit"
+  ]
+}

@@ -1,85 +1,38 @@
-{
-  "tools": [
-    {
-      "name": "notesmd_daily_read",
-      "description": "Read a daily note for a given date.",
-      "parameters": {
-        "type": "object",
-        "required": ["date"],
-        "properties": {
-          "date": {
-            "type": "string",
-            "description": "Date in YYYY-MM-DD format"
-          }
-        }
-      }
-    },
-    {
-      "name": "notesmd_daily_update",
-      "description": "Create or update a daily note with content.",
-      "parameters": {
-        "type": "object",
-        "required": ["date", "content"],
-        "properties": {
-          "date": {
-            "type": "string",
-            "description": "Date in YYYY-MM-DD format"
-          },
-          "content": {
-            "type": "string",
-            "description": "Note content in markdown format"
-          },
-          "replace": {
-            "type": "boolean",
-            "description": "true to overwrite existing content; false to append"
-          }
+[
+  {
+    "name": "notesmd_daily_read",
+    "description": "Read a daily note for a given date.",
+    "parameters": {
+      "type": "object",
+      "required": ["date"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "Date in YYYY-MM-DD format"
         }
       }
     }
-  ],
-  "allowlist": {
-    "notesmd-cli": ["print", "print-default", "create"]
   },
-  "execution": [
-    {
-      "tool": "notesmd_daily_read",
-      "binary": "notesmd-cli",
-      "subcommand": "print",
-      "args": [
-        {
-          "param": "date",
-          "kind": "positional",
-          "resolveCommand": {
-            "script": "resolve-daily-path",
-            "args": ["$param"]
-          }
-        }
-      ]
-    },
-    {
-      "tool": "notesmd_daily_update",
-      "binary": "notesmd-cli",
-      "subcommand": "create",
-      "args": [
-        {
-          "param": "date",
-          "kind": "positional",
-          "resolveCommand": {
-            "script": "resolve-daily-path",
-            "args": ["$param"]
-          }
+  {
+    "name": "notesmd_daily_update",
+    "description": "Create or update a daily note with content.",
+    "parameters": {
+      "type": "object",
+      "required": ["date", "content"],
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "Date in YYYY-MM-DD format"
         },
-        {
-          "param": "content",
-          "kind": "stdin"
+        "content": {
+          "type": "string",
+          "description": "Note content in markdown format"
         },
-        {
-          "param": "replace",
-          "kind": "flagifboolean",
-          "flagIfTrue": "--overwrite",
-          "flagIfFalse": "--append"
+        "replace": {
+          "type": "boolean",
+          "description": "true to overwrite existing content; false to append"
         }
-      ]
+      }
     }
-  ]
-}
+  }
+]

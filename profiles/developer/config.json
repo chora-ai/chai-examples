@@ -18,7 +18,15 @@
       "role": "orchestrator",
       "defaultProvider": "nearai",
       "defaultModel": "zai-org/GLM-5.1-FP8",
-      "enabledSkills": ["files", "cargo", "git"]
+      "enabledSkills": ["files", "cargo", "git"],
+      "enabledWorkers": ["worker-1", "worker-2"]
+    },
+    {
+      "id": "reviewer",
+      "role": "orchestrator",
+      "defaultProvider": "nearai",
+      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "enabledSkills": ["files", "git-read"]
     },
     {
       "id": "worker-1",

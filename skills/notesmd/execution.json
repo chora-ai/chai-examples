@@ -1,0 +1,79 @@
+[
+  {
+    "tool": "notesmd_search",
+    "binary": "notesmd-cli",
+    "subcommand": "search-content",
+    "args": [
+      { "param": "query", "kind": "positional" },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_read",
+    "binary": "notesmd-cli",
+    "subcommand": "print",
+    "args": [
+      { "param": "path", "kind": "positional" },
+      {
+        "param": "mentions",
+        "kind": "flagifboolean",
+        "flagIfTrue": "--mentions"
+      },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_create",
+    "binary": "notesmd-cli",
+    "subcommand": "create",
+    "args": [
+      { "param": "path", "kind": "positional" },
+      { "param": "content", "kind": "stdin" },
+      {
+        "param": "replace",
+        "kind": "flagifboolean",
+        "flagIfTrue": "--overwrite",
+        "flagIfFalse": "--append"
+      },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_list",
+    "binary": "notesmd-cli",
+    "subcommand": "list",
+    "args": [
+      { "param": "path", "kind": "positional", "optional": true },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_delete",
+    "binary": "notesmd-cli",
+    "subcommand": "delete",
+    "args": [
+      { "param": "path", "kind": "positional" },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_frontmatter_read",
+    "binary": "notesmd-cli",
+    "subcommand": "frontmatter --print",
+    "args": [
+      { "param": "note", "kind": "positional" },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  },
+  {
+    "tool": "notesmd_frontmatter_edit",
+    "binary": "notesmd-cli",
+    "subcommand": "frontmatter --edit",
+    "args": [
+      { "param": "note", "kind": "positional" },
+      { "param": "key", "kind": "flag", "flag": "key" },
+      { "param": "value", "kind": "flag", "flag": "value" },
+      { "param": "vault", "kind": "flag", "flag": "vault" }
+    ]
+  }
+]

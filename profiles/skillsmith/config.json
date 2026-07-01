@@ -4,7 +4,7 @@
       "id": "nearai",
       "endpointType": "openai-compat",
       "baseUrl": "https://cloud-api.near.ai/v1",
-      "apiKey": "<NEAR_API_KEY>"
+      "apiKey": "<NEARAI_API_KEY>"
     }
   ],
   "agents": [
@@ -12,14 +12,14 @@
       "id": "skillsmith",
       "role": "orchestrator",
       "defaultProvider": "nearai",
-      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "defaultModel": "z-ai/glm-5.2",
       "enabledSkills": ["skills", "skills-design"]
     },
     {
       "id": "worker-1",
       "role": "worker",
       "defaultProvider": "nearai",
-      "defaultModel": "zai-org/GLM-5.1-FP8",
+      "defaultModel": "z-ai/glm-5.2",
       "enabledSkills": ["skills-read", "skills-design"]
     }
   ],
